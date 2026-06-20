@@ -1,0 +1,26 @@
+# Phantom Horizons Studios — static site (Netlify)
+[build]
+  publish = "."
+
+# OWASP Secure Headers — applied to every response.
+# CSP is now strict 'self' (CSS/JS are external files, no inline executable script).
+# When embedding Stripe.js later: add https://js.stripe.com to script-src,
+# https://api.stripe.com to connect-src, https://js.stripe.com to frame-src.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'; upgrade-insecure-requests"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), camera=(), microphone=(), payment=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+
+# Cache the static assets (content-hash later if filenames are versioned).
+[[headers]]
+  for = "/styles.css"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+[[headers]]
+  for = "/app.js"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"

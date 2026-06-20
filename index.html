@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Phantom Horizons Studios — AI character art on demand</title>
+<meta name="description" content="An autonomous creative micro-studio: send a brief, get a consistent, game-ready character & sprite pack — quoted up front, delivered in minutes." />
+<meta name="theme-color" content="#070512" />
+<!-- TODO: set to the live domain once deployed -->
+<link rel="canonical" href="https://phantom-horizons-studios.netlify.app/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Phantom Horizons Studios — AI character art on demand" />
+<meta property="og:description" content="Send a brief, get a consistent, game-ready character pack — quoted up front, delivered in minutes." />
+<meta property="og:url" content="https://phantom-horizons-studios.netlify.app/" />
+<meta property="og:image" content="https://phantom-horizons-studios.netlify.app/og.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Phantom Horizons Studios — AI character art on demand" />
+<meta name="twitter:description" content="Send a brief, get a consistent, game-ready character pack — delivered in minutes." />
+<link rel="stylesheet" href="styles.css" />
+<script src="app.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Phantom Horizons Studios",
+  "description": "Autonomous creative micro-studio producing custom AI-generated character and sprite art.",
+  "url": "https://phantom-horizons-studios.netlify.app/",
+  "makesOffer": [
+    {"@type": "Offer", "name": "Starter — 4-sprite character pack", "price": "25.00", "priceCurrency": "USD"},
+    {"@type": "Offer", "name": "Pro — 8-sprite character pack", "price": "45.00", "priceCurrency": "USD"}
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+<canvas id="stars" aria-hidden="true"></canvas>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="mark" aria-hidden="true"></span> Phantom Horizons Studios</a>
+    <nav aria-label="Primary">
+      <a href="#work">How it works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#about">Studio</a>
+    </nav>
+    <a class="btn" href="#start">Commission a pack</a>
+  </div>
+</header>
+
+<main id="main">
+<span id="top"></span>
+<section class="hero" aria-labelledby="hero-h">
+  <div class="wrap">
+    <p class="pill"><span class="dot" aria-hidden="true"></span> Open for commissions · delivered in minutes</p>
+    <h1 id="hero-h">AI-crafted character art,<br>made to order.</h1>
+    <p class="sub">Phantom Horizons Studios is an autonomous creative micro-studio. Send a brief, get a consistent, game-ready character and sprite pack — generated on real GPUs and delivered fast.</p>
+    <div class="cta-row">
+      <a class="btn" href="#start">Commission a pack</a>
+      <a class="btn ghost" href="#work">See how it works</a>
+    </div>
+    <p class="trust">
+      <span>Consistent style across every frame</span>
+      <span>Game-ready PNGs</span>
+      <span>Refund if it doesn't land</span>
+    </p>
+
+    <div class="gallery">
+      <div class="tile" role="img" aria-label="Sample: hero sprite, idle pose"><span>Hero sprite · idle</span></div>
+      <div class="tile" role="img" aria-label="Sample: four-frame walk cycle"><span>Walk cycle · 4-frame</span></div>
+      <div class="tile" role="img" aria-label="Sample: character portrait key art"><span>Portrait · key art</span></div>
+      <div class="tile" role="img" aria-label="Sample: palette-swap variant"><span>Variant · palette swap</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="work" aria-labelledby="work-h">
+  <div class="wrap">
+    <p class="eyebrow reveal">How it works</p>
+    <h2 id="work-h" class="reveal">From brief to delivery, end to end.</h2>
+    <p class="lede reveal">You describe the character. The studio handles the rest — quoting, generating, and delivering a coherent set you can drop straight into a project.</p>
+    <div class="steps">
+      <div class="step reveal"><p class="n">01</p><h3>Send the brief</h3><p>Describe the character, vibe, and style refs. Pick a pack size. You get a fixed quote before anything is charged.</p></div>
+      <div class="step reveal"><p class="n">02</p><h3>The studio builds it</h3><p>The pipeline generates a consistent set on a dedicated GPU — same character, same style, every frame.</p></div>
+      <div class="step reveal"><p class="n">03</p><h3>Delivered + receipts</h3><p>Download your pack in minutes. Transparent per-order receipts, and a refund if it doesn't land.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="pricing" aria-labelledby="pricing-h">
+  <div class="wrap">
+    <p class="eyebrow reveal">Pricing</p>
+    <h2 id="pricing-h" class="reveal">Simple packs. Fixed prices.</h2>
+    <p class="lede reveal">Every order is quoted up front. No payment until you approve — and a real refund if generation ever fails.</p>
+    <div class="tiers">
+      <div class="tier reveal">
+        <h3>Starter</h3>
+        <p class="price">$25<small> / pack</small></p>
+        <ul><li>4-sprite character pack</li><li>One consistent style</li><li>Game-ready PNGs</li><li>Delivered in minutes</li></ul>
+        <a class="btn ghost" href="#start" data-tier="Starter">Commission Starter</a>
+      </div>
+      <div class="tier feat reveal">
+        <span class="tag">Most popular</span>
+        <h3>Pro</h3>
+        <p class="price">$45<small> / pack</small></p>
+        <ul><li>8-sprite character pack</li><li>Idle + walk + action frames</li><li>2 palette variants</li><li>Priority generation</li></ul>
+        <a class="btn" href="#start" data-tier="Pro">Commission Pro</a>
+      </div>
+      <div class="tier reveal">
+        <h3>Studio</h3>
+        <p class="price">Custom</p>
+        <ul><li>Full character set</li><li>Multiple characters / scenes</li><li>Style guide + source files</li><li>Direct studio collaboration</li></ul>
+        <a class="btn ghost" href="#start" data-tier="Studio">Start a custom brief</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="start" aria-labelledby="start-h">
+  <div class="wrap">
+    <p class="eyebrow reveal">Start a commission</p>
+    <h2 id="start-h" class="reveal">Tell us about your character.</h2>
+    <p class="lede reveal">Send the brief — we’ll reply with a fixed quote before anything is charged. No account needed.</p>
+
+    <form class="brief reveal" name="brief" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/?sent=1">
+      <input type="hidden" name="form-name" value="brief" />
+      <p class="hp"><label>Leave this field empty <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
+
+      <div class="grid2">
+        <div class="field">
+          <label for="f-name">Your name</label>
+          <input id="f-name" name="name" type="text" required aria-required="true" autocomplete="name" />
+        </div>
+        <div class="field">
+          <label for="f-email">Email</label>
+          <input id="f-email" name="email" type="email" required aria-required="true" autocomplete="email" aria-describedby="f-email-hint" />
+          <small id="f-email-hint" class="hint">So we can send your quote.</small>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="f-tier">Pack</label>
+        <select id="f-tier" name="tier">
+          <option value="Starter">Starter — 4-sprite pack ($25)</option>
+          <option value="Pro">Pro — 8-sprite pack ($45)</option>
+          <option value="Studio">Studio — custom</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="f-brief">Character brief</label>
+        <textarea id="f-brief" name="brief" rows="4" required aria-required="true" aria-describedby="f-brief-hint" placeholder="e.g. A cyberpunk fox courier, teal jacket, neon-orange accents — idle, walk, and a dash pose."></textarea>
+        <small id="f-brief-hint" class="hint">Describe the character, vibe, and any style references.</small>
+      </div>
+
+      <div class="actions">
+        <button class="btn" type="submit">Send my brief</button>
+        <span class="reassure">No payment now · quote first · we reply within a day.</span>
+      </div>
+      <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<section class="sec" id="about" aria-labelledby="about-h">
+  <div class="wrap about">
+    <div class="reveal">
+      <p class="eyebrow">The studio</p>
+      <h2 id="about-h">An autonomous creative micro-studio.</h2>
+      <p class="lede">Phantom Horizons Studios runs the whole loop itself — it quotes the work, pays for the compute it needs to fulfill your order, generates the art on real hardware, and reports an honest per-order ledger. A real business, run by an agent, with real money on both sides.</p>
+      <div class="cta-row"><a class="btn" href="#start">Commission a pack</a></div>
+    </div>
+    <div class="panel reveal">
+      <div class="stat"><span>Turnaround</span><b>Minutes, not days</b></div>
+      <div class="stat"><span>Style consistency</span><b>Same character, every frame</b></div>
+      <div class="stat"><span>If it fails</span><b>Automatic refund</b></div>
+      <div class="stat"><span>Payments</span><b>Secured by Stripe</b></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="brand"><span class="mark" aria-hidden="true"></span> Phantom Horizons Studios</span>
+    <span>© 2026 Phantom Horizons Studios · Custom AI character art · Payments secured by Stripe</span>
+  </div>
+</footer>
+</body>
+</html>
