@@ -4,7 +4,7 @@
 
 **Goal:** Convert Willie Stewart's Upwork profile from a generic AI-automation listing into an honest, humanized AI-agent systems specialist profile backed by public proof.
 
-**Architecture:** Treat the profile as a single sales narrative: headline establishes the niche, overview translates technical work into client outcomes, skills improve discovery, and experience establishes credibility. All public copy is checked against the approved design and repository evidence before publishing.
+**Architecture:** Treat the profile as a single sales narrative: headline establishes the niche, overview translates technical work into client outcomes, skills improve discovery, and experience establishes credibility. Check every public claim against the approved design and repository evidence before publishing.
 
 **Tech Stack:** Upwork connector, RewriteLy Humanizer, GitHub evidence, ChatGPT
 
@@ -55,16 +55,16 @@ Phantom Horizon Studios — AI Agent Systems Builder
 
 - [ ] **Step 3: Record any connector limitations**
 
-If title, overview, skills, portfolio, or employment writes are unavailable through the current tool mode, switch to Upwork's search-and-execute mode or preserve exact paste-ready copy and report the blocked field.
+If title, overview, skills, portfolio, or employment writes are unavailable through the current tool mode, switch to Upwork's search-and-execute mode. If a field is still unavailable, retain the exact copy in `docs/upwork/profile-copy.md` and report the blocked field rather than pretending it changed.
 
-### Task 2: Humanize the Specialist Copy
+### Task 2: Humanize and Freeze the Specialist Copy
 
 **Files:**
 - Create: `docs/upwork/profile-copy.md`
 
 **Interfaces:**
 - Consumes: approved specialist positioning and public GitHub evidence
-- Produces: final headline, overview, skills, and experience copy
+- Produces: exact final headline, overview, skills, and experience copy
 
 - [ ] **Step 1: Diagnose the proposed overview**
 
@@ -72,90 +72,40 @@ Check for generic phrases, repetition, résumé-like language, unsupported claim
 
 - [ ] **Step 2: Adapt the overview for a freelancer marketplace**
 
-Use a direct, confident, warm voice. Preserve these facts:
+Preserve the facts about MCP and tool integrations, persistent memory and retrieval, RAG, lifecycle hooks, repository rescue, testing, verification, rollback, AI-assisted engineering, and more than 12 years of military technical and operations experience.
 
-```text
-MCP and agent-tool integrations
-Persistent memory and semantic retrieval
-RAG and multi-step workflows
-Lifecycle hooks and procedure enforcement
-Repository rescue, testing, verification, and rollback
-AI-assisted engineering workflow
-More than 12 years of U.S. military operations and technical experience
-```
-
-- [ ] **Step 3: Save the final copy**
-
-The file must contain:
-
-```markdown
-# Upwork Profile Copy
-
-## Headline
-[final headline under 70 characters]
-
-## Overview
-[final overview under 5000 characters]
-
-## Skills
-[accepted ontology candidates in priority order]
-
-## Navy Employment
-[exact public entry]
-
-## Marine Corps Employment
-[exact public entry]
-```
-
-- [ ] **Step 4: Check character limits**
-
-Verify the headline is 70 characters or fewer and the overview is 5000 characters or fewer.
-
-### Task 3: Publish Headline and Overview
-
-**Files:**
-- Read: `docs/upwork/profile-copy.md`
-
-**Interfaces:**
-- Consumes: final humanized copy
-- Produces: updated public Upwork headline and overview
-
-- [ ] **Step 1: Draft the headline update**
-
-Target headline:
+- [ ] **Step 3: Save the exact headline**
 
 ```text
 AI Agent Developer | MCP, RAG, Memory & Automation
 ```
 
-- [ ] **Step 2: Confirm the headline draft under the user's approved implementation authorization**
+- [ ] **Step 4: Save the exact overview**
 
-If the connector requires a new post-preview confirmation that cannot use the user's blanket approval, present that single mandatory gate instead of guessing.
+```text
+Most AI agents don’t fail because the model is too weak. They fail because the tools, memory, instructions, and handoffs around the model are unreliable.
 
-- [ ] **Step 3: Draft the overview update**
+I help turn half-working agents and AI prototypes into systems that can actually complete multi-step work. That includes MCP servers and tool integrations, RAG and persistent memory, agent lifecycle hooks, model routing, approval gates, repository workflows, and the testing and rollback controls needed to keep changes manageable.
 
-Use the exact humanized overview saved in `docs/upwork/profile-copy.md`.
+I’m a strong fit when:
 
-- [ ] **Step 4: Confirm the overview draft under the user's approved implementation authorization**
+• An agent ignores tools, loses context, or skips procedures
+• Retrieval returns the wrong information or memory becomes noisy
+• A prototype works in a demo but breaks during real workflows
+• Several models, tools, or agents need clear responsibilities and handoffs
+• An existing repository or integration needs investigation and rescue
+• You need useful documentation and evidence—not just “it should work”
 
-If the connector requires a new post-preview confirmation that cannot use the user's blanket approval, present that single mandatory gate.
+My process is practical. I inspect the current workflow, repository, logs, and dependencies; define what success looks like; direct AI-assisted implementation; review changes and outputs; run tests; diagnose failures; and iterate until the agreed evidence is there.
 
-- [ ] **Step 5: Fetch the profile and compare exact text**
+Public examples of my work include an MCP server for safer Hindsight embedding upgrades and rollback, a native Windows VectorChord build and migration workflow, an always-on procedure-enforcement plugin for Hermes Agent, and persistent-memory integrations for Claude Code and OpenClaw.
 
-Expected: live title and overview match the saved source copy, with no truncation or escaped markup.
+Before moving into AI systems, I spent more than 12 years in the U.S. military working across electrical systems, technical troubleshooting, operations, and travel-program administration supporting hundreds of travelers. That background is why I care about procedures, fault isolation, documentation, and making the whole workflow work—not only the impressive demo.
 
-### Task 4: Replace the Skill Set
+Tell me what the agent is supposed to do, what it is doing instead, and what it needs to connect to. I’ll help you turn that into a working, testable system.
+```
 
-**Files:**
-- Read: `docs/upwork/profile-copy.md`
-
-**Interfaces:**
-- Consumes: ordered skill candidates
-- Produces: complete revised Upwork skill set, maximum 20
-
-- [ ] **Step 1: Submit the complete skill candidate set**
-
-Use this order:
+- [ ] **Step 5: Save the ordered skill candidates**
 
 ```text
 AI Agent Development
@@ -176,13 +126,78 @@ Prompt Engineering
 Chatbot Development
 ```
 
+- [ ] **Step 6: Save the exact employment copy**
+
+Navy:
+
+```text
+Served in technical operations and program administration roles covering electrical systems, travel and expense workflows, government travel-card coordination, records review, and customer support. Troubleshot electrical equipment using technical documentation, inspections, test equipment, and structured fault isolation. As a travel program administrator, supported approximately 300–400 travelers, reviewed authorizations and vouchers for accuracy and compliance, resolved payment and account issues, tracked program requirements, and translated detailed policy into practical guidance for employees and leaders.
+```
+
+Marine Corps:
+
+```text
+Performed welding, cutting, fabrication, and repair using MIG/TIG, brazing, plasma cutting, and oxy-fuel equipment. Worked from technical drawings and measurements, inspected finished work, maintained tools and equipment, and followed strict safety and quality procedures in a high-accountability maintenance environment.
+```
+
+- [ ] **Step 7: Check character limits**
+
+Expected:
+
+```text
+Headline: 50 characters
+Overview: 1,999 characters
+```
+
+### Task 3: Publish Headline and Overview
+
+**Files:**
+- Read: `docs/upwork/profile-copy.md`
+
+**Interfaces:**
+- Consumes: exact final humanized copy
+- Produces: updated public Upwork headline and overview
+
+- [ ] **Step 1: Draft the headline update**
+
+Use the exact headline saved in `docs/upwork/profile-copy.md`.
+
+- [ ] **Step 2: Confirm the headline draft under the user's approved implementation authorization**
+
+If the connector requires a new post-preview confirmation that cannot use the user's blanket approval, present that single mandatory gate instead of guessing.
+
+- [ ] **Step 3: Draft the overview update**
+
+Use the exact overview saved in `docs/upwork/profile-copy.md`.
+
+- [ ] **Step 4: Confirm the overview draft under the user's approved implementation authorization**
+
+If the connector requires a new post-preview confirmation that cannot use the user's blanket approval, present that single mandatory gate.
+
+- [ ] **Step 5: Fetch the profile and compare exact text**
+
+Expected: live title and overview match the saved source copy, with no truncation or escaped markup.
+
+### Task 4: Replace the Skill Set
+
+**Files:**
+- Read: `docs/upwork/profile-copy.md`
+
+**Interfaces:**
+- Consumes: ordered skill candidates
+- Produces: complete revised Upwork skill set, maximum 20
+
+- [ ] **Step 1: Submit the complete candidate set**
+
+Use the 16 skills saved in `docs/upwork/profile-copy.md`.
+
 - [ ] **Step 2: Review ontology resolution**
 
 Remove only rejected names. Use the closest accepted Upwork term when the connector returns an explicit mapping.
 
 - [ ] **Step 3: Confirm the resolved complete set**
 
-Do not accidentally append to the old three-skill set; replace the complete set.
+Replace the complete skill set; do not append to the old three-skill set.
 
 - [ ] **Step 4: Fetch and verify the profile**
 
@@ -194,12 +209,10 @@ Expected: agent systems, MCP/RAG, integrations, and development skills appear ah
 - Read: `docs/upwork/profile-copy.md`
 
 **Interfaces:**
-- Consumes: verified résumé dates and scope
+- Consumes: verified résumé dates and exact public descriptions
 - Produces: two public Upwork employment records
 
 - [ ] **Step 1: Add U.S. Navy employment**
-
-Use:
 
 ```text
 Company: U.S. Navy
@@ -208,13 +221,10 @@ Role: Technical Operations & Program Administration
 Start: 2017-11-01
 City: Indianapolis
 Country: US
+Description: use the exact Navy copy in docs/upwork/profile-copy.md
 ```
 
-The description must mention electrical troubleshooting, travel and expense administration, government travel-card coordination, compliance review, and support for approximately 300–400 travelers without exposing sensitive information.
-
 - [ ] **Step 2: Add U.S. Marine Corps employment**
-
-Use:
 
 ```text
 Company: U.S. Marine Corps
@@ -224,13 +234,12 @@ Start: 2012-12-01
 End: 2016-12-01
 City: Various Locations
 Country: US
+Description: use the exact Marine Corps copy in docs/upwork/profile-copy.md
 ```
-
-The description must translate welding, fabrication, technical drawings, precision, safety, and equipment support into civilian language.
 
 - [ ] **Step 3: Verify dates and public descriptions**
 
-Expected: no acronyms that are unexplained, no disciplinary or medical information, and no claims outside the résumé evidence.
+Expected: no unexplained military acronyms, disciplinary or medical information, or claims outside the résumé evidence.
 
 ### Task 6: Verify the Completed Profile
 
@@ -247,15 +256,17 @@ Expected: no acronyms that are unexplained, no disciplinary or medical informati
 
 - [ ] **Step 3: Check the first 250 characters**
 
-The opening must communicate the client problem, agent systems specialization, and concrete outcome without requiring expansion.
+The opening must communicate the client problem, agent-systems specialization, and concrete outcome without requiring expansion.
 
 - [ ] **Step 4: Check honesty and status language**
 
 No public project may be called production-ready unless repository evidence supports that status.
 
-- [ ] **Step 5: Commit the final copy source**
+- [ ] **Step 5: Confirm the copy source is committed**
 
-```bash
-git add docs/upwork/profile-copy.md
-git commit -m "docs: add final Upwork specialist profile copy"
+Expected file and commit message:
+
+```text
+docs/upwork/profile-copy.md
+docs: add final humanized Upwork profile copy
 ```
