@@ -2,18 +2,27 @@
 
 **Prepared:** 2026-09-02  
 **Profile rate:** $33.33/hour  
-**Available Connects at review:** 149
+**Public proof policy:** Only the two projects below may be presented as Willie's original portfolio work.
+
+## Approved Public Proof
+
+| Client need | Public proof |
+|---|---|
+| MCP tools, safe migrations, Postgres extension management, backup, verification, and rollback | [`hindsight-installer-mcp`](https://github.com/grimmjoww/hindsight-installer-mcp) |
+| Native Windows vector infrastructure, VectorChord builds, Hindsight migrations, and Ollama reindexing | [`vchord-windows-port`](https://github.com/grimmjoww/vchord-windows-port) |
+
+Do not cite other repositories as Willie's original portfolio work. The rest of the account contains research forks, copied reference projects, private work, abandoned experiments, or unfinished prototypes unless Willie explicitly reclassifies one after review.
 
 ## Scoring Rubric
 
 | Category | Points |
 |---|---:|
 | Technical fit | 25 |
-| Public proof match | 20 |
+| Approved proof match | 20 |
 | Scope clarity | 15 |
 | Client quality | 15 |
 | Budget realism | 15 |
-| Competition and timing | 5 |
+| Timing and application cost | 5 |
 | Fast-review potential | 5 |
 | **Total** | **100** |
 
@@ -27,71 +36,53 @@
 ### Automatic Rejection Flags
 
 - Expert implementation scope attached to a token fixed budget
-- Unpaid production work or an oversized “test”
+- Unpaid production work or an oversized test
 - Requests to communicate or pay outside Upwork before a contract
-- Vague autonomous-agent build with no bounded deliverables
-- Client rating below 4.5 unless the opportunity has a compelling explanation
-- A required stack or domain outside Willie’s demonstrated lane
-- A full-platform build disguised as a one-week or low-cost engagement
-
-## Proof Map
-
-| Client need | Best public proof |
-|---|---|
-| MCP servers, safe migrations, reversible agent actions | `hindsight-installer-mcp` |
-| Windows vector infrastructure and embedding migrations | `vchord-windows-port` |
-| Agent procedure enforcement and reliable skill activation | `hermes-superpowers-plugin` |
-| Claude Code lifecycle memory | `claude-code-memu` |
-| OpenClaw lifecycle memory | `openclaw-memu` |
-| Broader studio and portfolio context | `phantom-horizons-studios` |
+- A vague autonomous-agent build with no bounded deliverables
+- A client rating below 4.5 without a compelling explanation
+- Required experience Willie cannot truthfully demonstrate
+- A full platform disguised as a one-week or low-cost engagement
 
 ---
 
-# Current Ranked Leads
+# Current First-Wave Leads
 
-## 1. Agent Setup Expert — Live Call Support (Hourly, Ad-Hoc)
+## 1. Agent Setup Expert — Live Call Support
 
 **Job:** https://www.upwork.com/jobs/~022092536107749220992  
 **Job ID:** `2092536107749220992`  
 **Recommendation:** **Strong apply**  
-**Score:** **92/100**  
-**Connects:** 22  
-**Posted:** 2026-08-26  
-**Competition at review:** 39 proposals; 35 invites sent  
-**Budget:** Hourly, not stated  
-**Client:** Germany; 4.89 freelancer rating from 112 reviews; 188 contracts; 152 jobs with hires; $35,457.42 spent
+**Estimated score:** **88/100**  
+**Format:** Hourly, beginning with one paid 60-minute call  
+**Client signal:** Established Upwork hiring history and strong freelancer feedback
 
-### Score Evidence
+### Why It Fits
 
-- **Technical fit — 25/25:** Daily Codex use, MCP, repo/folder structure, persistent context, custom skills, operations briefings, agent coordination, and permission/security traps closely match Willie’s work.
-- **Public proof — 20/20:** Hermes Superpowers, Hindsight Installer MCP, and the memory integrations provide direct examples.
-- **Scope clarity — 15/15:** One paid 60-minute call first; the client builds while the freelancer advises and unblocks.
-- **Client quality — 15/15:** Established hiring record and strong feedback from freelancers.
-- **Budget realism — 10/15:** Paid hourly, but no range is stated.
-- **Competition/timing — 2/5:** Meaningful proposal and invite volume.
-- **Fast-review potential — 5/5:** A bounded paid consultation can close quickly and lead to repeat calls.
+The client wants somebody who uses Codex and agent tooling in real work, understands MCP, repository structure, persistent context, permissions, coordination failures, and can explain the trade-offs live. Willie has direct operating experience in that environment. His approved public proof shows an agent-callable MCP with explicit safety and recovery controls, plus a difficult Windows integration that required systematic diagnosis across several components.
 
 ### Proposal
 
 ```text
 I have read your full job post.
 
-The distinction you made—your team builds it, while the consultant advises and unblocks you—is exactly the kind of engagement I understand. I use Codex as an engineering and operations layer, not only as a code generator, and I’ve built workflows around MCP servers, persistent memory, custom skills, repository controls, multi-agent handoffs, and verification gates.
+The distinction you made—your team builds the system while the consultant advises, reviews, and unblocks you—is exactly the kind of engagement I understand. I use Codex and other coding agents as an engineering and operations layer, not only as code generators, and I’m comfortable tracing why an agent, tool, repository workflow, or environment is behaving differently from the intended procedure.
 
-One public example is my Hermes Superpowers plugin, which moves critical procedure use out of the model’s discretion and enforces it at the system layer: https://github.com/grimmjoww/hermes-superpowers-plugin
+My strongest public example is Hindsight Installer MCP. It gives an agent controlled tools for inspecting a Hindsight/Postgres setup, installing vector extensions, changing embedding pipelines, checking compatibility, creating backups, verifying recall, and rolling back a failed upgrade:
+https://github.com/grimmjoww/hindsight-installer-mcp
 
-I also directed an MCP for safer Hindsight embedding migrations with backup, compatibility checks, recall verification, and rollback: https://github.com/grimmjoww/hindsight-installer-mcp
+I also documented and automated a native Windows VectorChord build and Hindsight migration after working through Rust, LLVM, Postgres, index, environment, and re-embedding failures:
+https://github.com/grimmjoww/vchord-windows-port
 
-For the first call, I’d review your repository and folder structure, persistent context, skills/MCP surface, and the operations use cases you’re targeting. You’d leave with a short priority list: what to keep, what to simplify, what creates permission or coordination risk, and the next changes your team should make itself.
+For the first call, I’d inspect your repository and folder structure, context files, MCP/tool surface, permission boundaries, and the operations workflow causing the most friction. You would leave with a concise list of what to keep, what to simplify, the main risks, and the next changes your team can make itself.
 
-I’m comfortable thinking aloud on screen share and explaining trade-offs without turning the call into a lecture. My profile rate is $33.33/hour.
+I’m comfortable thinking aloud on screen share and explaining the reasoning without turning the call into a lecture. My profile rate is $33.33/hour.
 
-Which issue is creating the most friction right now: context persistence, MCP permissions, or agents overwriting one another’s work?
+Which problem is costing you the most time right now: agents losing context, tool permissions, or multiple agents stepping on the same work?
 ```
 
 ### First Deliverable
 
-A 60-minute live architecture and troubleshooting review followed by a concise keep/change/risk/next-actions summary.
+A 60-minute live architecture and troubleshooting review followed by a short keep/change/risk/next-actions summary.
 
 ---
 
@@ -99,45 +90,35 @@ A 60-minute live architecture and troubleshooting review followed by a concise k
 
 **Job:** https://www.upwork.com/jobs/~022094666830947344539  
 **Job ID:** `2094666830947344539`  
-**Recommendation:** **Strong apply**  
-**Score:** **86/100**  
-**Connects:** 23  
-**Posted:** 2026-09-01  
-**Competition at review:** 32 proposals; 5 invites sent  
-**Budget:** Hourly, not stated; short paid scoping consultation first  
-**Client:** India; 5.0 freelancer rating from one review; one hire; $180 spent
+**Recommendation:** **Apply selectively**  
+**Estimated score:** **79/100**  
+**Format:** Paid scoping consultation before a possible longer engagement
 
-### Score Evidence
+### Why It Fits
 
-- **Technical fit — 24/25:** MCP, shared skills, context architecture, privacy boundaries, Python/TypeScript, and under-specified design decisions align closely.
-- **Public proof — 19/20:** Hermes Superpowers demonstrates shared canonical content plus a thin host-specific layer; Hindsight Installer MCP demonstrates agent-facing infrastructure and safety controls.
-- **Scope clarity — 14/15:** Starts with a paid architecture consultation before a longer build.
-- **Client quality — 9/15:** Positive but very limited history.
-- **Budget realism — 12/15:** Paid scoping is appropriate, but no rate is stated.
-- **Competition/timing — 3/5:** Moderate proposal volume on a recent posting.
-- **Fast-review potential — 5/5:** Bounded paid consultation with a clear decision artifact.
+The strongest match is MCP architecture and under-specified technical decision-making. The limitation is equally important: Willie should not claim prior multi-tenant SaaS delivery or a finished shared-skills product. The proposal should lead with the real design decisions from Hindsight Installer MCP and VectorChord rather than implying experience he does not have.
 
 ### Proposal
 
 ```text
-You’re not choosing only an MCP implementation. You’re deciding where the shared product ends, where each client’s configuration begins, and what information is allowed to cross that boundary. I would model those layers first, then compare building your own MCP-fronted library with extending a vendor against control, maintainability, tenant isolation, observability, and migration risk.
+The central decision here is larger than choosing an MCP SDK. You need a clean boundary between the shared product, each client’s configuration, the data that stays inside the client environment, and the limited signals allowed to improve the common layer.
 
-A relevant decision from my own work was separating canonical Superpowers skill content from a Hermes-specific enforcement layer. Instead of rewriting every skill per host, I preserved the upstream content, added a narrow compatibility map, and moved critical activation into a first-turn plugin hook. That reduced drift while keeping the host-specific layer replaceable:
-https://github.com/grimmjoww/hermes-superpowers-plugin
-
-I also directed an MCP for Hindsight/Postgres upgrades that separates detection, configuration, migration, verification, and rollback rather than hiding the entire process in one opaque tool:
+A relevant decision from my own work was keeping Hindsight as the memory engine while building a separate MCP operational layer around it. The MCP exposes inspection, extension installation, environment changes, migration, verification, backup, and rollback without pretending those responsibilities belong inside the upstream product:
 https://github.com/grimmjoww/hindsight-installer-mcp
 
-For the paid scoping session, I’d aim to leave you with a recommended boundary model, two viable architecture options, the main privacy risks, and a first implementation slice.
+I made a similar boundary decision with VectorChord on Windows. Rather than presenting the upstream VectorChord code as mine, I kept a separate repository for the original Windows build documentation, helper scripts, and Hindsight migration work I actually produced:
+https://github.com/grimmjoww/vchord-windows-port
 
-Two questions I’d want to settle early: What exact decision/action data is allowed to leave a client environment, and do shared improvements return automatically or only through a reviewed release process?
+For a paid scoping session, I would map the core-versus-client boundary, identify what data can cross it, compare a custom MCP-fronted library against extending a vendor, and produce two viable options with risks and a recommended first implementation slice.
+
+Two questions I would settle immediately: What exact decision or action data may leave a client environment, and do improvements enter the shared layer automatically or only through a reviewed release process?
 
 My profile rate is $33.33/hour.
 ```
 
 ### First Deliverable
 
-A concise architecture decision record covering build-versus-vendor, core-versus-client boundaries, data-flow/privacy rules, and the smallest testable first implementation.
+A concise architecture decision record covering build-versus-vendor, core-versus-client boundaries, privacy/data flow, and the smallest testable first implementation.
 
 ---
 
@@ -145,116 +126,56 @@ A concise architecture decision record covering build-versus-vendor, core-versus
 
 **Job:** https://www.upwork.com/jobs/~022087018044855480589  
 **Job ID:** `2087018044855480589`  
-**Recommendation:** **Strong apply only if eligibility answers are yes**  
-**Score:** **84/100 conditional**  
-**Connects:** 14  
-**Competition at review:** 39 proposals; 132 invites; 4 hires on the posting  
-**Budget:** $50–$100/hour  
-**Client:** 4.85 freelancer rating from 12 reviews; 24 contracts; 14 jobs with hires; $3,257.16 spent
+**Recommendation:** **Apply only after eligibility is verified**  
+**Estimated score:** **84/100 conditional**  
+**Format:** One paid 45–60 minute interview
 
 ### Eligibility Gate
 
-Do not apply unless Willie can truthfully confirm:
+Do not apply unless Willie can truthfully confirm all required subscription dates, official-provider spending, model usage, and willingness to provide redacted proof. GitHub work cannot establish subscription eligibility.
 
-1. Official Claude and/or ChatGPT subscriptions purchased directly from the provider.
-2. More than $200/month in qualifying official subscriptions for the past six continuous months.
-3. Exact approximate monthly spend for Claude, ChatGPT, and APIs.
-4. Recent use of GLM, DeepSeek, or Kimi.
-5. Willingness to provide a redacted subscription/payment screenshot.
-
-### Score Evidence
-
-- **Technical/user fit — 23/25:** Willie uses premium models and Codex in real agent-system and repository workflows and has recent GLM experience.
-- **Proof match — 12/20:** The GitHub portfolio shows the workflows but cannot prove subscription dates or spend.
-- **Scope clarity — 15/15:** One anonymous 45–60 minute research interview.
-- **Client quality — 12/15:** Active hiring history and good overall rating, with mixed individual feedback that should be noted.
-- **Budget realism — 15/15:** Appropriate paid research rate.
-- **Competition/timing — 2/5:** High invite volume and multiple hires already.
-- **Fast-review potential — 5/5:** Small, defined consultation that can become an early Upwork contract.
-
-### Conditional Proposal
+### Proposal
 
 ```text
-I use ChatGPT Pro and Codex as part of a daily agent-systems workflow rather than only for general chat. My work includes directing repository changes, comparing model behavior, building tool and memory integrations, diagnosing failures, and deciding when a premium model is worth the cost versus a lower-cost alternative.
+I use ChatGPT Pro, Codex, and several other models as part of a daily agent-systems workflow rather than only for general chat. My work includes directing repository changes, comparing model behavior, troubleshooting tool use, reviewing diffs and tests, and deciding when a premium model is worth the cost compared with a lower-cost alternative.
 
-I’ve also used GLM recently and regularly compare models on tool use, long-context work, planning quality, latency, reliability, and subscription value—not only benchmark scores.
+I can discuss where premium access materially changes an engineering workflow, where cheaper models are enough, and how I compare systems on planning, tool use, long-context work, latency, reliability, and cost. I can also keep employer, client, and private-repository information out of the interview.
 
-I can discuss where premium access materially changes the workflow, where less expensive models are enough, and why I switch between systems depending on the job. I’m also comfortable providing a redacted screenshot of official subscription status and payment history, provided my dates and spend meet your stated eligibility rules.
-
-I’m available for a 45–60 minute Zoom interview and can keep all employer, client, and private repository information out of the discussion.
-```
-
-### Screening Answers
-
-```text
-1. Continuous official spend above $200/month for six months: [REQUIRES WILLIE'S EXACT ANSWER]
-
-2. Approximate monthly spending:
-Claude subscription: [EXACT AMOUNT]
-ChatGPT subscription: [EXACT AMOUNT]
-API: [EXACT AMOUNT]
-
-3. Recent models used: GLM [add DeepSeek/Kimi only if true]
-
-4. Future plan: [A OR B — REQUIRES WILLIE'S CHOICE]
-
-5. Willing to provide redacted verification screenshot: [YES/NO]
+I am available for a 45–60 minute Zoom interview and can provide the requested redacted subscription evidence only if my exact dates and spend satisfy your eligibility rules.
 ```
 
 ---
 
-## 4. Claude Code / MCP Automation Cleanup and Buildout
+# Selective or Deferred Leads
 
-**Job:** https://www.upwork.com/jobs/~022093045916527103425  
-**Job ID:** `2093045916527103425`  
-**Recommendation:** **Apply selectively only with real Google Workspace API experience**  
-**Score:** **72/100 conditional**  
-**Connects:** 11  
-**Competition at review:** 68 proposals  
-**Budget:** Hourly, not stated  
-**Client:** New Upwork client; no completed contracts or spend
+## AI/RAG Engineer for SaaS Audit
 
-### Why It Is Not First Wave Yet
+The audit-first structure fits Willie's troubleshooting method, but the posted fixed price bundles retrieval, ingestion, application logic, security, scalability, performance, and engineering estimates. Apply only if the client accepts a sharply bounded first milestone.
 
-The Claude Code, MCP, skills, hooks, scheduled-task, documentation, and training work fits well. However, the client explicitly requires Google Workspace API experience. Adjacent connector use is not enough to claim that requirement. Apply only when a specific, truthful example is available.
+## Production MCP Server Roles
 
----
+Hindsight Installer MCP is relevant proof, but jobs requiring demonstrated production OAuth/JWT, AWS, Docker, and multi-tenant SaaS delivery should not be treated as automatic fits. Apply only when the first milestone matches demonstrated experience or the proposal clearly distinguishes current proof from new implementation work.
 
-## 5. AI Technical Generalist — Product, Automation & Development
+## Hermes, Claude Code, OpenClaw, and memU Jobs
 
-**Job:** https://www.upwork.com/jobs/~022095033414185450911  
-**Job ID:** `2095033414185450911`  
-**Recommendation:** **Skip for now**  
-**Score:** **66/100**  
-**Connects:** 23  
-**Competition at review:** 41 proposals; one freelancer already hired  
-**Budget:** $10–$30/hour  
-**Client:** 5.0 freelancer rating from one review; two contracts; $50 spent
-
-### Why It Is Not First Wave
-
-The language describes Willie’s working style unusually well: unfamiliar-system investigation, Codex/Claude Code, APIs, RAG, vector databases, tool calling, testing, and documentation. The downside is material: the rate tops out below the current profile rate, the client has limited spend, the posting requests production-quality code ownership, and one freelancer is already hired. It is useful market evidence, but not a good use of 23 Connects today.
+Willie has hands-on experience using and experimenting with these systems, but the associated repositories are not approved portfolio proof. Do not link them, describe them as finished original products, or use them to satisfy a client's request for completed public examples.
 
 ---
 
-# Hard Skips Reviewed
+# Hard Skips
 
-| Job | Reason |
+| Job pattern | Reason |
 |---|---|
-| Agentic RAG with tool calling — $100 fixed | Multi-hop retrieval, tool routing, demos, evaluation, and write-up for $100; hiring count showed zero. |
-| Autonomous sales agent — $2,000 fixed | Full prospecting, scraping, competitor/SEO analysis, outreach, CRM, and booked-call system compressed into one fixed budget. |
-| AI/RAG SaaS audit — $400 fixed | RAG, ingestion, app logic, security, scalability, performance, and effort estimation bundled into an oversized audit. |
-| AI Automation Builder + Operations Generalist — $11–$15/hour | Strong work-style fit with radically unrealistic compensation. |
-| Claude Code webhook fix — $10 fixed | Payment is not worth proposal effort or Connects. |
-| Northquill SaaS repair | Interesting problem, but outside the strongest proof lane and the full posting showed zero people to hire. |
+| Full agentic RAG build for roughly $100 | Tool routing, multi-hop retrieval, evaluation, demos, and documentation exceed the budget. |
+| Autonomous sales company for a small fixed price | Prospecting, scraping, enrichment, outreach, CRM, and booked-call delivery are separate systems, not one cheap milestone. |
+| Broad RAG/security/scalability audit for a token fixed price | The requested surface is too large to inspect responsibly at that price. |
+| Full-time agent and operations work at virtual-assistant rates | The scope and responsibility do not match the compensation. |
+| Jobs requiring proof from cloned or unfinished repositories | A proposal cannot manufacture evidence the portfolio does not contain. |
 
-# First-Wave Connect Strategy
+# Connect Strategy
 
-1. Agent Setup Expert — 22 Connects
-2. Skills Platform Architecture — 23 Connects
-3. Premium AI Research Interview — 14 Connects, only after eligibility is verified
-
-**Maximum first-wave spend:** 59 Connects  
-**Remaining if all three are submitted:** 90 Connects
-
-Do not submit any proposal until Upwork displays the final rate, Connect cost, cover letter, and screening answers for job-specific approval.
+1. Re-fetch every job immediately before applying.
+2. Check invitations and existing proposals before creating a new proposal.
+3. Use only the two approved public proof links.
+4. Present the final Upwork draft, Connect cost, bid, optional boost, and attachments before submission.
+5. Do not spend Connects until Willie approves that job-specific draft.
