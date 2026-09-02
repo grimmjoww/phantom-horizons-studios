@@ -1,6 +1,6 @@
 # Willie Stewart / Phantom Horizon Studios
 
-**AI Agent Developer — MCP, RAG, persistent memory, tooling, and workflow reliability**
+**AI Agent Developer - MCP, RAG, persistent memory, tooling, and workflow reliability**
 
 I build and troubleshoot the layer between a capable model and a system that can actually complete work: tools, APIs, memory, retrieval, lifecycle hooks, repositories, procedural gates, verification, and rollback.
 
@@ -8,16 +8,16 @@ My engineering workflow is AI-assisted and human-directed. I define outcomes and
 
 ## Selected work
 
-- **[hindsight-installer-mcp](https://github.com/grimmjoww/hindsight-installer-mcp)** — safe Hindsight embedding migrations, extension management, compatibility checks, recall verification, backup, and rollback through MCP.
-- **[vchord-windows-port](https://github.com/grimmjoww/vchord-windows-port)** — verified native Windows VectorChord build and Hindsight migration tooling without Docker or WSL2.
-- **[hermes-superpowers-plugin](https://github.com/grimmjoww/hermes-superpowers-plugin)** — always-on procedural enforcement for Hermes Agent, with documented 9/9 pre-ship checks.
-- **[claude-code-memu](https://github.com/grimmjoww/claude-code-memu)** — Claude Code lifecycle hooks plus a stdio MCP memory server.
-- **[openclaw-memu](https://github.com/grimmjoww/openclaw-memu)** — in-development OpenClaw memory plugin with automatic recall/capture, tools, CLI, and tests.
-- **[Phantom Horizon Studios](https://github.com/grimmjoww/phantom-horizons-studios)** — studio hub for agent systems and creative technology.
+- **[hindsight-installer-mcp](https://github.com/grimmjoww/hindsight-installer-mcp)** - safe Hindsight embedding migrations, extension management, compatibility checks, recall verification, backup, and rollback through MCP.
+- **[vchord-windows-port](https://github.com/grimmjoww/vchord-windows-port)** - verified native Windows VectorChord build and Hindsight migration tooling without Docker or WSL2.
+- **[hermes-superpowers-plugin](https://github.com/grimmjoww/hermes-superpowers-plugin)** - always-on procedural enforcement for Hermes Agent, with a documented 9 of 9 release-time integration record.
+- **[claude-code-memu](https://github.com/grimmjoww/claude-code-memu)** - Claude Code lifecycle hooks plus a stdio MCP memory server.
+- **[openclaw-memu](https://github.com/grimmjoww/openclaw-memu)** - in-development OpenClaw 5.x memory plugin with automatic pre-turn recall, corpus retrieval, explicit tools, gateway methods, CLI commands, and tests. Automatic post-turn capture remains unfinished.
+- **[Phantom Horizon Studios](https://github.com/grimmjoww/phantom-horizons-studios)** - studio hub for agent systems and creative technology.
 
 ## What I work on
 
-`AI agents` · `MCP` · `RAG` · `persistent memory` · `tool integration` · `agent lifecycle hooks` · `Python` · `TypeScript` · `GitHub workflows` · `Windows AI infrastructure`
+`AI agents` - `MCP` - `RAG` - `persistent memory` - `tool integration` - `agent lifecycle hooks` - `Python` - `TypeScript` - `GitHub workflows` - `Windows AI infrastructure`
 
 ## Operations background
 
