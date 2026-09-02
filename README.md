@@ -22,7 +22,7 @@ Agent-safe MCP tooling for Hindsight embedding migrations, Postgres extension ma
 
 ### [vchord-windows-port](https://github.com/grimmjoww/vchord-windows-port)
 
-Verified Windows-native VectorChord build documentation, helper scripts, database smoke tests, and a Hindsight migration playbook—without requiring Docker or WSL2.
+Verified Windows-native VectorChord build documentation, helper scripts, database smoke tests, and a Hindsight migration playbook - without requiring Docker or WSL2.
 
 ### [hermes-superpowers-plugin](https://github.com/grimmjoww/hermes-superpowers-plugin)
 
@@ -34,9 +34,9 @@ Claude Code lifecycle hooks and a stdio MCP server for automatic and explicit me
 
 ### [openclaw-memu](https://github.com/grimmjoww/openclaw-memu)
 
-An in-development OpenClaw memory plugin with recall/capture hooks, agent tools, CLI commands, schema-driven configuration, and tests.
+An in-development OpenClaw 5.x memory plugin with automatic pre-turn recall, corpus retrieval, explicit tools, gateway methods, CLI commands, and tests. Automatic post-turn capture is not yet wired in the current source.
 
-**[Read the public AI Agent Systems case studies →](./portfolio/README.md)**
+**[Read the public AI Agent Systems case studies ->](./portfolio/README.md)**
 
 ## How the studio works
 
