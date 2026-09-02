@@ -1,6 +1,6 @@
 # AI Agent Systems Portfolio
 
-Selected integration and reliability work directed by **Willie Stewart / Phantom Horizon Studios**.
+Selected public integration and reliability work directed by **Willie Stewart / Phantom Horizon Studios**.
 
 These case studies describe public repositories and the engineering workflow behind them. The work is AI-assisted and human-directed: Willie defines the outcome and safety constraints, directs coding agents through implementation, reviews changes and evidence, diagnoses failures, and coordinates revisions.
 
@@ -20,20 +20,20 @@ A stdio MCP server exposes narrow operational tools for detecting the Postgres m
 
 ### Reliability design
 
-- inspect state before mutation;
-- distinguish user-space `pg0` from system Postgres;
-- surface elevation requirements instead of hiding them;
-- pair migration with backup and recall verification;
-- test compatibility before attempting an upgrade;
-- preserve rollback when post-flight checks fail.
+- Inspect state before mutation.
+- Distinguish user-space `pg0` from system Postgres.
+- Surface elevation requirements instead of hiding them.
+- Pair migration with backup and recall verification.
+- Test compatibility before attempting an upgrade.
+- Preserve rollback when post-flight checks fail.
 
 ### Willie's role
 
 Defined the desired one-prompt operator workflow and its safety boundaries, directed the implementation, tested behavior in a Windows Hindsight environment, diagnosed integration failures, and iterated on the tool and documentation design.
 
-### Evidence
+### Evidence and status
 
-The public repository contains the MCP implementation, compatibility data, migration tooling, documentation, and an explicit alpha status rather than a production-readiness claim.
+The public repository contains the MCP implementation, compatibility data, migration tooling, smoke tests, and documentation. It is labeled version 0.2.0 alpha rather than being presented as a managed production service.
 
 ---
 
@@ -57,9 +57,9 @@ Rust 1.93 and 1.94 failed in the SIMD implementation because the required AVX-51
 
 Directed the build investigation, environment diagnosis, script creation, smoke-test process, Hindsight migration, failure analysis, and final documentation review.
 
-### Evidence
+### Evidence and status
 
-The repository records tested Windows, MSVC, LLVM, Rust, `cargo-pgrx`, and PostgreSQL versions; the produced DLL characteristics; install/uninstall scripts; SQL verification; and migration notes.
+The repository records tested Windows, MSVC, LLVM, Rust, `cargo-pgrx`, and PostgreSQL versions; the produced DLL characteristics; install/uninstall scripts; SQL verification; and migration notes. The claims are scoped to the tested April and May 2026 configurations rather than asserted as universal compatibility.
 
 ---
 
@@ -77,19 +77,20 @@ A Hermes plugin injects the Superpowers usage rule through a `pre_llm_call` hook
 
 ### Reliability design
 
-- enforcement happens before model action;
-- only the first turn receives the steering injection;
-- later turns remain silent to avoid repeated context cost;
-- upstream skill provenance is separated from original wrapper code;
-- command resolution and collisions are explicitly checked.
+- Enforcement happens before model action.
+- Only the first turn receives the steering injection.
+- Later turns remain silent to avoid repeated context cost.
+- Session tracking is bounded and the hook fails open.
+- Upstream skill provenance is separated from original wrapper code.
+- Command resolution and collisions are explicitly checked.
 
 ### Willie's role
 
 Defined the missing gate-layer requirement, directed the Hermes adaptation and compatibility mapping, reviewed provenance boundaries, and required named pre-ship checks.
 
-### Evidence
+### Evidence and status
 
-The repository documents **9/9 checks passing** on the tested Hermes profile, including hook behavior, first-turn injection, later-turn silence, external skill loading, command resolution, and collision checks.
+The release record documents **9 of 9 checks passing** on the tested Hermes profile, including hook behavior, first-turn injection, later-turn silence, external skill loading, command resolution, and collision checks. The repository does not claim a continuously rerun CI badge for those integration checks.
 
 ---
 
@@ -99,36 +100,36 @@ The repository documents **9/9 checks passing** on the tested Hermes profile, in
 
 ### Problem
 
-A memory search tool alone does not reliably give an agent context at the right time or capture the completed interaction afterward. Multiple users and agent roles also need scoped memory rather than one shared pool.
+A memory search endpoint alone does not decide when an agent should recall context, what a completed turn should capture, how multiple users and agent roles are isolated, which destructive actions require a gate, or how the host should behave when memory is unavailable.
 
-### Solution
+### Claude Code integration
 
-The Claude Code integration combines automatic lifecycle hooks with explicit MCP tools:
+The Claude Code repository contains two related paths:
 
-- session-start recall for broad current context;
-- prompt-specific recall before the model acts;
-- stop-hook capture of the latest completed exchange;
-- stdio tools for memorize, retrieve, direct item creation, category inspection, and confirmed deletion;
-- user and agent identifiers for memory scoping.
+- A stdio MCP server with tools for memorize, retrieve, direct memory-item creation, category inspection, and confirmed clearing.
+- Lifecycle hooks for session-start recall, prompt-specific recall, and capture of the most recent completed user/assistant exchange from the Claude transcript.
 
-The OpenClaw integration explores the same lifecycle pattern through `before_prompt_build` and `agent_end`, with plugin tools, CLI commands, and schema-driven configuration.
+The recall hooks soft-fail so an unavailable memory service does not block the coding session. Focused tests cover the session-start, prompt, and stop stages.
 
-### Reliability design
+### OpenClaw integration
 
-- retrieval hooks soft-fail instead of breaking the host agent;
-- empty prompts skip unnecessary calls;
-- capture reads the actual transcript path supplied by the host;
-- only the latest pair is captured from a cumulative transcript;
-- destructive clearing requires explicit confirmation;
-- hook tests exercise a real local HTTP boundary rather than only mocked function calls.
+The current OpenClaw 5.x source registers:
+
+- Automatic pre-turn recall through a memory prompt supplement.
+- Corpus search/get integration.
+- Explicit `memu_recall`, `memu_store`, and `memu_forget` tools.
+- Gateway methods for retrieve, memorize, and clear.
+- CLI commands for search, stats, and guarded clear.
+
+The repository retains capture helpers and explicit store operations, but **automatic post-turn capture is not wired in the current registration body**. That feature is therefore labeled unfinished rather than presented as complete.
 
 ### Willie's role
 
-Directed the memory architecture, scoping model, lifecycle behavior, failure handling, test expectations, repository implementation, and iterative diagnosis across Claude Code, OpenClaw, and memU.
+Directed the memory architecture, scoping model, lifecycle behavior, failure handling, test expectations, repository implementation, and iterative diagnosis across Claude Code, OpenClaw, and memU. During the portfolio audit, he reconciled the OpenClaw documentation with the actual 5.x source registrations.
 
 ### Status
 
-Both repositories are development integrations. Their public documentation deliberately distinguishes implemented/tested surfaces from unpublished or unfinished release work.
+Both repositories are development integrations. Their public documentation distinguishes implemented surfaces from unpublished or unfinished release work.
 
 ---
 
@@ -136,11 +137,11 @@ Both repositories are development integrations. Their public documentation delib
 
 This work is relevant to projects involving:
 
-- MCP servers and tool integrations;
-- agent memory, RAG, and retrieval quality;
-- lifecycle hooks and context injection;
-- multi-step agent workflows;
-- prototype or repository audits;
-- failure diagnosis and workflow hardening;
-- validation, backup, rollback, and operational documentation;
-- directed AI-assisted development across unfamiliar systems.
+- MCP servers and tool integrations
+- Agent memory, RAG, and retrieval quality
+- Lifecycle hooks and context injection
+- Multi-step agent workflows
+- Prototype or repository audits
+- Failure diagnosis and workflow hardening
+- Validation, backup, rollback, and operational documentation
+- Directed AI-assisted development across unfamiliar systems
