@@ -36,6 +36,8 @@ Claude Code lifecycle hooks and a stdio MCP server for automatic and explicit me
 
 An in-development OpenClaw memory plugin with recall/capture hooks, agent tools, CLI commands, schema-driven configuration, and tests.
 
+**[Read the public AI Agent Systems case studies →](./portfolio/README.md)**
+
 ## How the studio works
 
 The studio uses AI coding agents as implementation workers, not as a substitute for requirements, judgment, or verification. A typical workflow is:
@@ -61,4 +63,4 @@ Several repositories on the associated GitHub account are forks used for researc
 
 ## Contact
 
-For freelance agent-system work, use Willie's Upwork profile or GitHub issues on the relevant public project. Avoid posting credentials, private data, or production secrets in public issues.
+For freelance agent-system work, use [Willie's Upwork profile](https://www.upwork.com/freelancers/~015b0cc21b994e6c8d) or GitHub issues on the relevant public project. Avoid posting credentials, private data, or production secrets in public issues.
