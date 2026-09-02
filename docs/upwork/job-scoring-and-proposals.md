@@ -156,9 +156,9 @@ The audit-first structure fits Willie's troubleshooting method, but the posted f
 
 Hindsight Installer MCP is relevant proof, but jobs requiring demonstrated production OAuth/JWT, AWS, Docker, and multi-tenant SaaS delivery should not be treated as automatic fits. Apply only when the first milestone matches demonstrated experience or the proposal clearly distinguishes current proof from new implementation work.
 
-## Hermes, Claude Code, OpenClaw, and memU Jobs
+## Jobs Requiring Unapproved Repository Proof
 
-Willie has hands-on experience using and experimenting with these systems, but the associated repositories are not approved portfolio proof. Do not link them, describe them as finished original products, or use them to satisfy a client's request for completed public examples.
+Do not link or describe any unapproved repository as a finished original product. Hands-on experience can still be discussed truthfully, but it does not satisfy a client's request for completed public proof unless Willie has explicitly approved that project for the portfolio.
 
 ---
 
