@@ -1,72 +1,41 @@
 # Phantom Horizon Studios
 
-I build the glue that makes AI agents useful: tools, memory, retrieval, lifecycle hooks, and the checks that keep multi-step work from quietly going sideways.
+This repository contains a prototype studio website and working notes for Willie Stewart's independent AI work. It is **not** being presented as a finished software product or as technical portfolio proof by itself.
 
-My work sits between a capable model and a dependable system. I focus on MCP and tool integrations, persistent memory, RAG, agent workflows, repository-based implementation, debugging, verification, and rollback.
+## Public Technical Work I Claim
 
-## What I Build
-
-- MCP servers and agent-tool integrations
-- Persistent memory, semantic retrieval, and RAG workflows
-- Lifecycle hooks that recall context, capture useful state, or enforce procedures
-- Single-agent and multi-agent workflows with clear responsibilities
-- Safer migrations, compatibility checks, backups, and rollback paths
-- Technical documentation that explains what works, what is still experimental, and how to verify it
-
-## Selected Work
+These are the only repositories I currently present as public technical proof:
 
 ### [Hindsight Installer MCP](https://github.com/grimmjoww/hindsight-installer-mcp)
 
 **Status: Alpha; core workflows tested on Windows 11 and PostgreSQL 17.**
 
-An MCP server that lets compatible agents inspect a Hindsight installation, manage Postgres extensions, migrate embedding pipelines, verify recall, and perform reversible upgrades. It includes mode detection, backup-aware migrations, compatibility checks, and rollback behavior.
+An MCP server that gives compatible agents a controlled workflow for inspecting a Hindsight installation, managing Postgres extensions, changing embedding pipelines, checking compatibility, creating backups, verifying recall, and rolling back failed upgrades.
 
 ### [VectorChord Windows Port](https://github.com/grimmjoww/vchord-windows-port)
 
-**Status: Validated on the documented Windows and PostgreSQL configurations.**
+**Status: Validated on the Windows, Rust, VectorChord, and PostgreSQL versions documented in the repository.**
 
-Native Windows build documentation and helper scripts for VectorChord, plus an end-to-end Hindsight embedding migration workflow. The repository documents version-specific build failures, installation steps, smoke tests, and an Ollama-based reindex workaround.
-
-### [Hermes Superpowers Plugin](https://github.com/grimmjoww/hermes-superpowers-plugin)
-
-**Status: Working plugin with 9/9 documented pre-ship checks passing on the tested profile.**
-
-An always-on Hermes Agent plugin that injects procedural discipline before the first model call and exposes the canonical Superpowers skills through Hermes-native tools. The repository preserves upstream attribution and separates the original skill content from my plugin wrapper and compatibility work.
-
-### [Claude Code + memU](https://github.com/grimmjoww/claude-code-memu)
-
-**Status: Prototype / active development.**
-
-A Python MCP and lifecycle-hook integration for persistent memU-backed memory in Claude Code. The project includes configuration, server logic, hook runners, and tests for automatic recall and capture behavior.
-
-### [OpenClaw + memU](https://github.com/grimmjoww/openclaw-memu)
-
-**Status: Active development; not yet published to npm or ClawHub.**
-
-A TypeScript memory plugin that connects OpenClaw lifecycle hooks to memU-server. It supports automatic recall before a turn, automatic capture after a turn, memory tools, and a CLI surface.
-
-### [Phantom Horizon Studios](https://github.com/grimmjoww/phantom-horizons-studios)
-
-**Status: Studio and portfolio hub.**
-
-The umbrella for my agent-systems work, creative AI experiments, applications, games, and original media projects.
+Native Windows build documentation and helper scripts for VectorChord, plus a tested Hindsight migration path. The repository records the toolchain, version-specific build failures, installation steps, smoke tests, and an Ollama-based reindex workaround.
 
 ## How I Work
 
-I use an AI-assisted engineering workflow. I turn the desired outcome into constraints and acceptance criteria, direct coding agents through research and implementation, inspect repository changes and outputs, run tests, diagnose failures, and keep iterating until the agreed evidence is there.
+I use an AI-assisted engineering workflow openly. I define the outcome, constraints, and acceptance criteria; direct coding agents through research and implementation; inspect repository changes and outputs; run tests; diagnose failures; and keep iterating until the available evidence matches the requirement.
 
-That means I am comfortable entering an unfamiliar repository, figuring out how the pieces connect, and turning a vague problem into a testable plan. I care about the unglamorous parts too: logs, failure handling, documentation, compatibility, cost, and rollback.
+My strongest work is at the systems-integration layer: MCP tools, agent workflows, retrieval and embedding infrastructure, Postgres vector systems, Windows-native troubleshooting, backups, rollback, and documentation that explains what actually worked.
+
+## Repository Status and Attribution
+
+Other repositories on this GitHub account include research forks, copied reference projects, abandoned experiments, and unfinished prototypes. They are **not** claimed as original portfolio work or client-ready products. Those repositories are being reviewed for deletion, archival, or private visibility.
+
+That distinction matters: a repository being present on this account does not mean I authored the upstream project or consider the experiment complete.
 
 ## Technical Background
 
-Before moving into AI systems, I spent more than 12 years in the U.S. military across electrical systems, technical troubleshooting, welding and fabrication, operations, and travel-program administration. I supported a command-wide travel program serving approximately 300–400 travelers while also working in safety-critical technical environments.
+Before focusing on AI systems, I spent more than 12 years in the U.S. military across electrical systems, technical troubleshooting, welding and fabrication, operations, and travel-program administration. I supported a command-wide travel program serving approximately 300–400 travelers while also working in safety-critical technical environments.
 
-That background still shapes how I approach software: isolate the fault, follow the evidence, document the work, and make sure the whole system functions—not only the demo.
+That background still shapes how I approach software: isolate the fault, follow the evidence, document the change, and make sure the complete workflow functions—not only the demo.
 
-## Creative Technology
+## About This Repository
 
-Phantom Horizon Studios also explores creative AI, game systems, interactive characters, worldbuilding, music, and original storytelling. That work is a secondary lane here; this portfolio leads with agent systems and technical integrations.
-
-## Contact
-
-For freelance agent-system work, visit my [Upwork profile](https://www.upwork.com/freelancers/~015b0cc21b994e6c8d).
+The website files here are an early studio prototype. The repository does not contain a completed autonomous fulfillment backend, production client platform, or verified end-to-end service-delivery system. Until those pieces exist and are tested, this repository should be read as planning and presentation work only.
