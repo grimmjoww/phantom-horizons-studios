@@ -2,49 +2,51 @@
 
 ## Headline
 
-AI Agent Developer | MCP, RAG, Memory & Automation
+AI Agent Developer | MCP, RAG, Vector Search & Automation
 
 ## Overview
 
-Most AI agents don’t fail because the model is too weak. They fail because the tools, memory, instructions, and handoffs around the model are unreliable.
+Need an AI agent or retrieval workflow that works outside the demo? I build and troubleshoot the integration layer between a capable model and the systems it has to use: MCP tools, APIs, embedding pipelines, Postgres vector infrastructure, repositories, verification checks, backups, and rollback paths.
 
-I help turn half-working agents and AI prototypes into systems that can actually complete multi-step work. That includes MCP servers and tool integrations, RAG and persistent memory, agent lifecycle hooks, model routing, approval gates, repository workflows, and the testing and rollback controls needed to keep changes manageable.
+I’m especially useful when:
 
-I’m a strong fit when:
+• An agent or integration works inconsistently and nobody has isolated why  
+• A RAG or memory system needs a safer embedding or vector-index migration  
+• An MCP tool needs clear boundaries, structured outputs, and recoverable actions  
+• A Windows-based AI stack needs several poorly documented components to work together  
+• A half-working repository needs investigation, testing, and a practical repair plan  
+• You need documentation that distinguishes what was tested from what is still experimental
 
-• An agent ignores tools, loses context, or skips procedures  
-• Retrieval returns the wrong information or memory becomes noisy  
-• A prototype works in a demo but breaks during real workflows  
-• Several models, tools, or agents need clear responsibilities and handoffs  
-• An existing repository or integration needs investigation and rescue  
-• You need useful documentation and evidence—not just “it should work”
+My public technical proof is intentionally focused:
 
-My process is practical. I inspect the current workflow, repository, logs, and dependencies; define what success looks like; direct AI-assisted implementation; review changes and outputs; run tests; diagnose failures; and iterate until the agreed evidence is there.
+**Hindsight Installer MCP** — an alpha MCP server for inspecting Hindsight and Postgres environments, managing vector extensions, changing embedding pipelines, checking compatibility, creating backups, verifying recall, and rolling back failed upgrades.
 
-Public examples of my work include an MCP server for safer Hindsight embedding upgrades and rollback, a native Windows VectorChord build and migration workflow, an always-on procedure-enforcement plugin for Hermes Agent, and persistent-memory integrations for Claude Code and OpenClaw.
+**VectorChord Windows Port** — native Windows build documentation and helper tooling for VectorChord, plus a tested Hindsight migration path covering toolchain failures, Postgres installation, vector-index changes, re-embedding, and retrieval verification.
 
-Before moving into AI systems, I spent more than 12 years in the U.S. military working across electrical systems, technical troubleshooting, operations, and travel-program administration supporting hundreds of travelers. That background is why I care about procedures, fault isolation, documentation, and making the whole workflow work—not only the impressive demo.
+I use an AI-assisted engineering workflow openly. I turn the desired outcome into constraints and acceptance criteria, direct coding agents through research and implementation, inspect the changes and outputs, run tests, diagnose failures, and keep iterating until the available evidence matches the requirement. You get a technical partner who can explain what changed and why—not a black-box prompt and a shrug.
 
-Tell me what the agent is supposed to do, what it is doing instead, and what it needs to connect to. I’ll help you turn that into a working, testable system.
+Before moving into AI systems, I spent more than 12 years in the U.S. military across electrical systems, technical troubleshooting, operations, welding and fabrication, and travel-program administration supporting hundreds of travelers. That background shaped how I work: trace the fault, document the change, verify the result, and leave the system easier to operate than I found it.
+
+Send me the workflow, repository, or stubborn failure you need solved. I’ll help define the cleanest first milestone and tell you plainly what the current evidence supports.
 
 ## Skills
 
 1. AI Agent Development
 2. Model Context Protocol
 3. Retrieval-Augmented Generation
-4. AI Model Integration
-5. API Integration
-6. Workflow Automation
-7. Large Language Models
+4. Vector Database
+5. PostgreSQL
+6. API Integration
+7. Workflow Automation
 8. Generative AI
-9. Python
-10. JavaScript
-11. TypeScript
-12. GitHub
+9. Large Language Models
+10. Python
+11. GitHub
+12. Git
 13. Software Debugging
 14. Technical Documentation
-15. Prompt Engineering
-16. Chatbot Development
+15. Embedding
+16. Artificial Intelligence
 
 ## Navy Employment
 
@@ -63,8 +65,8 @@ Served in technical operations and program administration roles covering electri
 **Title:** Welder & Metal Fabrication Technician  
 **Role:** Welding, Fabrication & Equipment Support  
 **Start:** 2012-12-01  
-**End:** 2016-12-01  
-**City:** Various Locations  
+**End:** 2016-12-31  
+**City:** Various Assignments  
 **Country:** US
 
 Performed welding, cutting, fabrication, and repair using MIG/TIG, brazing, plasma cutting, and oxy-fuel equipment. Worked from technical drawings and measurements, inspected finished work, maintained tools and equipment, and followed strict safety and quality procedures in a high-accountability maintenance environment.
