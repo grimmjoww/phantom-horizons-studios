@@ -1,72 +1,66 @@
 # Phantom Horizon Studios
 
-I build the glue that makes AI agents useful: tools, memory, retrieval, lifecycle hooks, and the checks that keep multi-step work from quietly going sideways.
+> A solo AI studio building agent systems, creative technology, and AI-assisted software workflows.
 
-My work sits between a capable model and a dependable system. I focus on MCP and tool integrations, persistent memory, RAG, agent workflows, repository-based implementation, debugging, verification, and rollback.
+Phantom Horizon Studios is the working studio identity of **Willie Stewart**. The studio combines hands-on operations experience with directed AI-assisted development: defining outcomes, constraints, and acceptance criteria; coordinating coding agents; reviewing repository changes; running tests; diagnosing failures; and iterating until the evidence matches the intended result.
 
-## What I Build
+## Current technical focus
 
-- MCP servers and agent-tool integrations
-- Persistent memory, semantic retrieval, and RAG workflows
-- Lifecycle hooks that recall context, capture useful state, or enforce procedures
-- Single-agent and multi-agent workflows with clear responsibilities
-- Safer migrations, compatibility checks, backups, and rollback paths
-- Technical documentation that explains what works, what is still experimental, and how to verify it
+- AI agents that use tools, APIs, and repositories
+- Model Context Protocol servers and integrations
+- Persistent memory, retrieval, and RAG systems
+- Agent lifecycle hooks and procedure enforcement
+- Safe migrations, backups, validation, and rollback
+- Windows-native AI infrastructure troubleshooting
+- Creative AI applications, characters, games, and interactive media
 
-## Selected Work
+## Selected original projects
 
-### [Hindsight Installer MCP](https://github.com/grimmjoww/hindsight-installer-mcp)
+### [hindsight-installer-mcp](https://github.com/grimmjoww/hindsight-installer-mcp)
 
-**Status: Alpha; core workflows tested on Windows 11 and PostgreSQL 17.**
+Agent-safe MCP tooling for Hindsight embedding migrations, Postgres extension management, compatibility checks, recall verification, backup, and rollback.
 
-An MCP server that lets compatible agents inspect a Hindsight installation, manage Postgres extensions, migrate embedding pipelines, verify recall, and perform reversible upgrades. It includes mode detection, backup-aware migrations, compatibility checks, and rollback behavior.
+### [vchord-windows-port](https://github.com/grimmjoww/vchord-windows-port)
 
-### [VectorChord Windows Port](https://github.com/grimmjoww/vchord-windows-port)
+Verified Windows-native VectorChord build documentation, helper scripts, database smoke tests, and a Hindsight migration playbook - without requiring Docker or WSL2.
 
-**Status: Validated on the documented Windows and PostgreSQL configurations.**
+### [hermes-superpowers-plugin](https://github.com/grimmjoww/hermes-superpowers-plugin)
 
-Native Windows build documentation and helper scripts for VectorChord, plus an end-to-end Hindsight embedding migration workflow. The repository documents version-specific build failures, installation steps, smoke tests, and an Ollama-based reindex workaround.
+An always-on procedural gate that adapts the Superpowers methodology to Hermes Agent through lifecycle hooks and Hermes-native skill loading.
 
-### [Hermes Superpowers Plugin](https://github.com/grimmjoww/hermes-superpowers-plugin)
+### [claude-code-memu](https://github.com/grimmjoww/claude-code-memu)
 
-**Status: Working plugin with 9/9 documented pre-ship checks passing on the tested profile.**
+Claude Code lifecycle hooks and a stdio MCP server for automatic and explicit memU-backed persistent memory.
 
-An always-on Hermes Agent plugin that injects procedural discipline before the first model call and exposes the canonical Superpowers skills through Hermes-native tools. The repository preserves upstream attribution and separates the original skill content from my plugin wrapper and compatibility work.
+### [openclaw-memu](https://github.com/grimmjoww/openclaw-memu)
 
-### [Claude Code + memU](https://github.com/grimmjoww/claude-code-memu)
+An in-development OpenClaw 5.x memory plugin with automatic pre-turn recall, corpus retrieval, explicit tools, gateway methods, CLI commands, and tests. Automatic post-turn capture is not yet wired in the current source.
 
-**Status: Prototype / active development.**
+**[Read the public AI Agent Systems case studies ->](./portfolio/README.md)**
 
-A Python MCP and lifecycle-hook integration for persistent memU-backed memory in Claude Code. The project includes configuration, server logic, hook runners, and tests for automatic recall and capture behavior.
+## How the studio works
 
-### [OpenClaw + memU](https://github.com/grimmjoww/openclaw-memu)
+The studio uses AI coding agents as implementation workers, not as a substitute for requirements, judgment, or verification. A typical workflow is:
 
-**Status: Active development; not yet published to npm or ClawHub.**
+1. Translate the desired outcome into constraints and acceptance criteria.
+2. Inspect the existing repository and environment.
+3. Direct an agent through implementation in reviewable steps.
+4. Examine changes, logs, test output, and system behavior.
+5. Diagnose failures and issue corrective instructions.
+6. Preserve rollback paths and document the final operating procedure.
 
-A TypeScript memory plugin that connects OpenClaw lifecycle hooks to memU-server. It supports automatic recall before a turn, automatic capture after a turn, memory tools, and a CLI surface.
+## Background
 
-### [Phantom Horizon Studios](https://github.com/grimmjoww/phantom-horizons-studios)
+Willie's professional background includes more than 12 years of U.S. military service across Navy electrical systems, travel-program administration, operations support, technical troubleshooting, and Marine Corps metal fabrication. That experience shapes the studio's emphasis on procedures, dependencies, evidence, safety boundaries, and complete workflows rather than one-off demos.
 
-**Status: Studio and portfolio hub.**
+## Website in this repository
 
-The umbrella for my agent-systems work, creative AI experiments, applications, games, and original media projects.
+The current static site explores an autonomous creative micro-studio for custom AI-generated character and sprite art. It is one creative-product experiment under the broader Phantom Horizon Studios umbrella; the selected repositories above represent the studio's agent-systems lane.
 
-## How I Work
+## Provenance
 
-I use an AI-assisted engineering workflow. I turn the desired outcome into constraints and acceptance criteria, direct coding agents through research and implementation, inspect repository changes and outputs, run tests, diagnose failures, and keep iterating until the agreed evidence is there.
-
-That means I am comfortable entering an unfamiliar repository, figuring out how the pieces connect, and turning a vague problem into a testable plan. I care about the unglamorous parts too: logs, failure handling, documentation, compatibility, cost, and rollback.
-
-## Technical Background
-
-Before moving into AI systems, I spent more than 12 years in the U.S. military across electrical systems, technical troubleshooting, welding and fabrication, operations, and travel-program administration. I supported a command-wide travel program serving approximately 300–400 travelers while also working in safety-critical technical environments.
-
-That background still shapes how I approach software: isolate the fault, follow the evidence, document the work, and make sure the whole system functions—not only the demo.
-
-## Creative Technology
-
-Phantom Horizon Studios also explores creative AI, game systems, interactive characters, worldbuilding, music, and original storytelling. That work is a secondary lane here; this portfolio leads with agent systems and technical integrations.
+Several repositories on the associated GitHub account are forks used for research or integration work. The projects listed above are selected because they contain original integration, tooling, documentation, or plugin work. Each repository should be read with its own provenance and license notes.
 
 ## Contact
 
-For freelance agent-system work, visit my [Upwork profile](https://www.upwork.com/freelancers/~015b0cc21b994e6c8d).
+For freelance agent-system work, use [Willie's Upwork profile](https://www.upwork.com/freelancers/~015b0cc21b994e6c8d) or GitHub issues on the relevant public project. Avoid posting credentials, private data, or production secrets in public issues.
